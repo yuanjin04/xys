@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap响应的另一种轮播形式</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="http://demo.jq22.com/jquery-bootstrap-150419135510/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://demo.jq22.com/jquery-bootstrap-150419135510/css/index.css" rel="stylesheet">
+    <link href="http://demo.jq22.com/jquery-bootstrap-150419135510/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://demo.jq22.com/jquery-bootstrap-150419135510/css/magic.min.css" rel="stylesheet" >
+    <link href="http://demo.jq22.com/jquery-bootstrap-150419135510/css/animate.min.css" rel="stylesheet"  />
+    <script src="http://demo.jq22.com/jquery-bootstrap-150419135510/js/jquery-1.7.2.min.js"></script>
+    <script src="http://demo.jq22.com/jquery-bootstrap-150419135510/js/bootstrap.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="http://demo.jq22.com/jquery-bootstrap-150419135510/js/html5shiv.min.js"></script>
+    <script src="http://demo.jq22.com/jquery-bootstrap-150419135510/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .carousel-control{
+            background: #666;
+            border: 0px;
+            border-radius: 0px;
+            display: inline-block;
+            font-size: 34px;
+            font-weight: 200;
+            line-height: 18px;
+            opacity: 0.5;
+            padding: 4px 10px 0px;
+            height: 30px;
+            width: 15px;
+        }
+
+        @media (max-width:768px) {
+            .row-fluid .span3{
+                width: 100%;
+                margin: 10px 0;
+            }
+            .carousel-control{
+                position: static;
+            }
+            .control-box{
+                text-align: center;
+            }
+        }
+        #sever-prev{
+            left: -120px;
+            top: 155px;
+
+        }
+        #sever-next{
+            top:155px;
+            right: -120px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid warrp">
+    <!--slide-->
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#" ><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg" alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide1 -->
+                        <div class="item">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide2 -->
+                        <div class="item">
+                            <ul class="thumbnails">
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                                <li class="span3">
+                                    <div class="thumbnail">
+                                        <a href="#"><img src="http://demo.jq22.com/jquery-bootstrap-150419135510/images/seimg.jpg"  alt=""></a>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>最美的一次旅程</h3>
+                                        <p>去香港旅游，有本攻略在手就吃喝玩乐都
+                                            不愁了。但要是你印了厚厚一打攻略，真
+                                            到用时就找不到信息了...
+                                        </p>
+                                        <span class="pull-left">129人浏览</span>
+                                        <a class="pull-right " href="#"><i class="glyphicon glyphicon-heart glyphicon2"></i> 109</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /Slide3 -->
+                    </div>
+                    <!--<a data-slide="prev" href="#myCarousel" class="left carousel-control left-bj hidden-xs" id="sever-prev">
+                        <span id="prev-nav" class="glyphicon glyphicon-chevron-left glyphicon-triangle-left" aria-hidden="true"></span>
+                    </a>
+                    <a data-slide="next" href="#myCarousel" class="right carousel-control left-bj hidden-xs" id="sever-next">
+                        <span id="next-nav" class="glyphicon glyphicon-chevron-right glyphicon-triangle-right" aria-hidden="true"></span>
+                    </a>
+                    <div class="control-box hidden-lg">
+                        <a data-slide="prev" href="#myCarousel" class="left carousel-control left-bj">‹</a>
+                        <a data-slide="next" href="#myCarousel" class="right carousel-control left-bj">›</a>
+                    </div>&lt;!&ndash; /.control-box &ndash;&gt;-->
+                </div><!-- /#myCarousel -->
+
+            </div><!-- /.span12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    <!--slide end-->
+
+</div>
+
+
+
+
+</body>
+</html>
